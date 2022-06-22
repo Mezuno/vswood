@@ -1,0 +1,55 @@
+.clicker__row {
+    padding: 20px;
+}
+.clicker__button {
+    border-radius: 50%;
+    background-color: crimson;
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+}
+#points {
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    padding: 20px;
+    font-weight: 900;
+}
+.button-box {
+    width: 200px;
+    height: 200px;
+
+}
+.clicker__button:hover {
+    background-color: rgba(220,20,60,0.9);
+}
+.clicker__button:active {
+    transition: .0025s;
+    background-color: rgba(220,20,60,0.7);
+    transform: scale(0.9);
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+.shop__list {
+}
+
+.shop__title, .shop__count, .shop__button, .shop__gain {
+    width: 90px;
+}
+.shop__button {
+    color: white;
+    padding: 15px;
+    background-color: green;
+    border-radius: 0px 10px 10px 0px;
+}
+.shop__item {
+    height: 50px;
+    width: 360px;
+    padding: 0px 0px 0px 10px;
+    background-color: #202020;
+    border-radius: 20px;
+    margin: 10px 0;
+}

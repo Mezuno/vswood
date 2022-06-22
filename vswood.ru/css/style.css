@@ -1,0 +1,349 @@
+@import 'nullstyle.css';
+@import 'media.css';
+
+@font-face {
+	font-family: Tahoma;
+	src: url(../fonts/Tahoma.ttf);
+}
+
+/* GENERAL */
+body {/*
+	background: url('../img/background(dark).jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	background-color: #636466;
+
+	color: #EEE;
+	font-size: 16px;
+	font-family: Tahoma;
+}
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+	height: 100%;
+}
+a {
+	color: #EEE;
+}
+a:hover {
+	text-decoration: none;
+}
+section {
+    background-color: #2D2D2E;
+	border-radius: 10px;
+}
+.wrapper {
+	position: relative;
+	left: 0;
+	transition: all 0.3s ease 0s;
+	width: 100%;
+	height: 100%;
+}
+.padding-top-header {
+	padding-top: 120px;
+}
+.window {
+    padding-top: 65px;
+    padding-left: 215px;
+	padding-bottom: 15px;
+	height: 100%;
+}
+.window__row {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.small-text {
+    font-size: 14px;
+}
+.gray-text {
+    color: #636466;
+}
+.light-gray-text {
+	color: #CCC;
+}
+.rounded-photo {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+/* NEW STYLES ---------------------------------------------- */
+
+/* Flex help classes */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-alit-center {
+    align-items: center;
+}
+.flex-just-spbtw {
+    justify-content: space-between;
+}
+.flex-just-sparnd {
+    justify-content: space-around;
+}
+.flex-row {
+    display: flex;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-1-1-auto {
+    flex: 1 1 auto;
+}
+
+/* Width & Height */
+.w100 {
+    width: 100%;
+}
+.h100 {
+    height: 100%;
+}
+
+/* Helpers */
+.rounded {
+    border-radius: 50%;
+}
+.br10 {
+    border-radius: 10px;
+}
+.overflow-hidden {
+	overflow: hidden;
+}
+
+/* END          ---------------------------------------------- */
+
+/* Header */
+.header {
+}
+.header__row {
+    height: 50px;
+    width: calc(100% - 200px);
+    float: right;
+    background-color: #2D2D2E;
+    padding: 10px 30px;
+    border-radius: 0px 0px 10px 0px;
+}
+.burger-menu {
+}
+.header__column {
+}
+.header__page-title {
+    font-size: 1.5em;
+}
+.header__button {
+    height: 30px;
+    border-radius: 15px 5px 5px 15px;
+}
+.header__link {
+    display: inline-flex;
+}
+.header__link_profile {
+    height: 100%;
+}
+.header__link_profile:hover {
+    background-color: #414243;
+    cursor: pointer;
+    border-radius: 15px 5px 5px 15px;
+}
+.header__link p {
+    padding: 5px 10px 5px 5px;
+}
+.header__link img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.header__link_exit {
+    padding: 5px;
+    margin-left: 15px;
+}
+.header__link_exit:hover {
+    text-decoration: underline;
+}
+
+/* Aside */
+.aside {
+}
+.aside__column {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+	transition: all 0.3s ease 0s;
+}
+.aside__top {
+    height: 50px;
+    width: 200px;
+
+    font-size: 2.25em;
+
+    background-color: #2D2D2E;
+    position: absolute;
+    z-index: 1000;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 0px 10px;
+}
+.aside__menu {
+    width: 200px;
+    position: absolute;
+    z-index: 1000;
+    top: 65px;
+    background: #2D2D2E;
+    border-radius: 10px;
+    padding: 10px;
+}
+.button {
+    border-radius: 10px;
+}
+.button:hover {
+    background-color: #414243;
+    cursor: pointer;
+}
+.aside__link {
+    display: block;
+    padding: 8px 0 8px 15px;
+}
+
+
+/* Login */
+.login {
+	background: url(../img/background_login.jpg);
+	background-size: cover;
+}
+.login__row {
+	padding: 40px;
+	height: 100%;
+	position: relative;
+
+
+	border-radius: 15px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login__hello {
+	font-size: 2.5em;
+	padding-bottom: 30px;
+    line-height: 1.25em;
+}
+.login__text {
+    line-height: 1.5em;
+}
+.login__content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.login__description {
+	flex: 1 1 300px;
+}
+.login__box {
+	width: 300px;
+	padding: 20px;
+	background-color: rgba(32,32,32,0.9);
+	display: inline-block;
+	border-radius: 5px;
+}
+.login__back {
+	padding-bottom: 10px;
+}
+.login__title {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+.input-text {
+	width: 100%;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.1);
+	border: 1px solid rgba(255,255,255,0.3);
+	margin-bottom: 10px;
+	border-radius: 3px;
+	color: white;
+}
+.input-text:focus {
+	background-color: rgba(255,255,255,0.15);
+}
+.input-button {
+	padding: 5px 10px;
+	border-radius: 3px;
+	background-color: #28a8de;
+	border: 1px solid #28a8de;
+	cursor: pointer;
+	color: white;
+}
+.input-button:hover {
+	background-color: rgba(0,0,0,0);
+	box-shadow: 0px 0px 5px #28a8de;
+	border: 1px solid #28a8de;
+}
+.login__box-bottom {
+	margin-top: 10px;
+	display: flex;
+	font-size: 0.8em;
+	color: #AAA;
+}
+.login__if {}
+.login__reglink:hover {text-decoration: underline;}
+
+
+/* Register */
+.register {
+	background: url(../img/background_login.jpg);
+	background-size: cover;
+}
+.register__row {
+	padding: 50px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+/* Chat */
+
+/* Profile */
+
+/* TODELETE */
+/* ENDTODELETE */
+
+#friendStatus {
+	margin: 0px;
+}
+
+/* ------------------------------------------ */
+
+.burger-menu {
+	display: none;
+}
+.page-title-center {
+	display: none;
+}
+
+/* Страница со всеми пользователями */
+.user-with-lastseen {
+	display: inline-flex;
+	align-items: center;
+	font-size: 1em;
+	margin-right: auto;
+}
+.user-with-lastseen p {
+	padding: 1.5px;
+}
+
+/* Новости */
